@@ -18,7 +18,8 @@ import java.util.ResourceBundle;
 import javafx.scene.image.ImageView;
 public class EditStaffUI implements Initializable {
 
-    ArrayList<Staff> userArrayList = StaffList.userArrayList;
+    StaffSystem staffSystem= new StaffSystem();
+    ArrayList<Staff> userArrayList = staffSystem.getStaff();
     ArrayList<UserNoButton>userNoButtons= StaffList.userNoButtons;
     int userCur = StaffList.userCur;
     FileChooser fileChooser = new FileChooser();

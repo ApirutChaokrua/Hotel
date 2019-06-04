@@ -111,12 +111,6 @@ public class NewStaffUI implements Initializable {
                         userType.getValue(), role.getText(), pass.getText(), passWord.getText(),file.toURI().toString());
                 StaffSystem staffSystem = new StaffSystem();
                 staffSystem.newStaff(a,b);
-//                userArrayList.add(new Staff(Integer.toString(StaffList.employeeId), userName.getText(), firstName.getText(), lastName.getText(),
-//                        idCard.getText(), country.getText(), tel.getText(), email.getText(), address.getText(),
-//                        userType.getValue(), role.getText(), new Button(), new Button(), pass.getText(), passWord.getText(),file.toURI().toString()));
-//                userNoButtons.add(new UserNoButton(Integer.toString(StaffList.employeeId), userName.getText(), firstName.getText(), lastName.getText(),
-//                        idCard.getText(), country.getText(), tel.getText(), email.getText(), address.getText(),
-//                        userType.getValue(), role.getText(), pass.getText(), passWord.getText(),file.toURI().toString()));
                 System.out.println("New User");
                 StaffList.employeeId++;
                 Stage stage = (Stage) btnCancel.getScene().getWindow();
